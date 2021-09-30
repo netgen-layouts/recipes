@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "netgen/layouts-ezplatform": {
+            "manifest": {
+                "bundles": {
+                    "Netgen\\Bundle\\LayoutsEzPlatformBundle\\NetgenLayoutsEzPlatformBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/netgen_layouts_ezplatform.yaml": {
+                    "contents": [
+                        "netgen_layouts_ezplatform:",
+                        "    resource: \"@NetgenLayoutsEzPlatformBundle/Resources/config/routing.yaml\"",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "a2b96dc2dd0361811746e0ff01c8bf80c5423f54"
+        }
+    }
+}
