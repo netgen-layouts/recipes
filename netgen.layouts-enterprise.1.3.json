@@ -1,0 +1,31 @@
+{
+    "manifests": {
+        "netgen/layouts-enterprise": {
+            "manifest": {
+                "bundles": {
+                    "Netgen\\Bundle\\LayoutsEnterpriseBundle\\NetgenLayoutsEnterpriseBundle": [
+                        "all"
+                    ],
+                    "Netgen\\Bundle\\LayoutsEnterpriseAdminBundle\\NetgenLayoutsEnterpriseAdminBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/netgen_layouts_enterprise.yaml": {
+                    "contents": [
+                        "netgen_layouts_enterprise:",
+                        "    resource: \"@NetgenLayoutsEnterpriseBundle/Resources/config/routing.yaml\"",
+                        "    prefix: \"%netgen_layouts.route_prefix%\"",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "f814c7666a624cce4bda61b105d79376e98c7b75"
+        }
+    }
+}
