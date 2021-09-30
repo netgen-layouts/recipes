@@ -1,0 +1,2 @@
+netgen_layouts_enterprise_ezplatform:
+    resource: "@NetgenLayoutsEnterpriseEzPlatformBundle/Resources/config/routing.yaml"
