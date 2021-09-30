@@ -1,0 +1,9 @@
+{
+    "bundles": {
+        "Netgen\\Bundle\\LayoutsEnterpriseBundle\\NetgenLayoutsEnterpriseBundle": ["all"],
+        "Netgen\\Bundle\\LayoutsEnterpriseAdminBundle\\NetgenLayoutsEnterpriseAdminBundle": ["all"]
+    },
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/"
+    }
+}
