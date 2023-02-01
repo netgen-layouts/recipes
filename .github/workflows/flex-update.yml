@@ -1,0 +1,14 @@
+name: Update Flex endpoint
+
+on:
+    push:
+        branches:
+            - master
+
+defaults:
+    run:
+        shell: bash
+
+jobs:
+    call-flex-update:
+        uses: netgen-layouts/recipes/.github/workflows/callable-flex-update.yml@master
