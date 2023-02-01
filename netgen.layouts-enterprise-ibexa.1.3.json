@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "netgen/layouts-enterprise-ibexa": {
+            "manifest": {
+                "bundles": {
+                    "Netgen\\Bundle\\LayoutsEnterpriseIbexaBundle\\NetgenLayoutsEnterpriseIbexaBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                }
+            },
+            "files": {
+                "config/routes/netgen_layouts_enterprise_ibexa.yaml": {
+                    "contents": [
+                        "netgen_layouts_enterprise_ibexa:",
+                        "    resource: \"@NetgenLayoutsEnterpriseIbexaBundle/Resources/config/routing.yaml\"",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "01536943fdd10ad3684d002567a8f5207098500c"
+        }
+    }
+}
